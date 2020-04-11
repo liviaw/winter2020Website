@@ -1,7 +1,7 @@
-# Summer Space Academy
+# Welcome!
 This repo contains the Github Pages hosted help site
 
-Access here: [summer2020.compclub.com.au](//summer2020.compclub.com.au)
+Access here: [online2020.compclub.com.au](//online2020.compclub.com.au)
 
 ## Editing
 
