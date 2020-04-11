@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompClub Winter School</title>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="/favicon.png">
+    <style>
+      .button{
+          padding: 10px; 
+          background-color: #555555; 
+          color: white; 
+          border:none; 
+          border-radius: 8px;
+      }
+      .button:hover{
+          background-color: #333333; 
+      }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '516554015857076');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=516554015857076&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header style="width:200px">
+        <img src="/logo.png" alt="Logo" style="padding-bottom: 30px"/>
+        <!--<img src="logoforwebsite.png" alt="Theme Logo"/>-->
+        <img src="/winter_2020_logo.png" alt="Winter Workshop Logo" />
+        <!-- <a href="/"><h1 align="center" style="padding-top: 20px">CompClub Summer Space Academy 2020</h1></a> -->
+
+        {% if site.show_downloads %}
+        {% endif %}
+      </header>
+      <section style="width:600px">
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        
+        {% endif %}
+        <!-- <a href="/subscribe"><button class="button" align="center">Stay Up to Date</button></a> -->
+        <!-- <p><small>Forged in the fires of Mordor by UNSW CompClub</small></p> -->
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
